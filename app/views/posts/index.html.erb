@@ -1,0 +1,22 @@
+<h1>Publicaciones Registradas</h1><table>
+  <tr>
+    <th>Nombre Autor </th>              
+    <th>Título Publicación</th>                      
+    <th>Texto Publicación </th>                      
+    <th>Total Comentarios </th>                      
+  </tr>
+ <% @counts_pos.each do |a| %>
+  <tr>
+    <td><%= a[0][0]%></td>
+    <td><%= a[0][1]%></td>
+    <td><%= a[0][2]%></td>        
+    <td><%=a[1] %></td><td>     
+        
+  </tr>
+  <% end %>
+ </table>
+</br>
+</br>
+<%= link_to "<= Homepage", root_path %>
+<center><%#= will_paginate @counts_t %></center>
+

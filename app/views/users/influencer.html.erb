@@ -1,0 +1,17 @@
+<h1>Influencer</h1><table>
+  <tr>
+    <th>Nombre Usuario </th>              
+    <th>Popularidad </th>                      
+  </tr>
+ <% @counts_a.each do |a| %>
+  <tr>
+    <td><%= a[0]%></td>        
+    <td><%=a[1] %></td><td>     
+        
+  </tr>
+  <% end %>
+ </table>
+</br>
+</br>
+<%= link_to "<= Homepage", root_path %>
+<center><%#= will_paginate @counts_t %></center>
